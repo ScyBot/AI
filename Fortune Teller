@@ -1,0 +1,24 @@
+#Fortune Teller Program
+import random
+have_question='y'
+while have_question=='y':
+    question=input('What is your question?\n')
+    print('\nYou asked me','"',question,'"')
+    rand_num=random.randint(1,8)
+    if 'get' in (question) and 'new' in (question) or 'girlfriend' in (question):
+        print('The probabilities are in your favor, you will find someone.')
+    elif rand_num==3:
+        print('The outlook is dim')
+    elif rand_num==4:
+        print('I would focus my thoughts on something else')
+    elif rand_num==5:
+        print('You are the only one who can answer that')
+    elif rand_num==6:
+        print("You know the answer to that already, don't you")
+    elif rand_num==7:
+        print('Someone unexpected can be most helpful with this')
+    elif rand_num==8:
+        print('It is close to certainty')
+    have_question = input('\nDo you have another question? (y/n): ')
+print('Goodbye....hope I was of some help!')
+#this program was made in Python and is my very first basic AI, if it can even be called that
